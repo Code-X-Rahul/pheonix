@@ -25,3 +25,28 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+*{
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
