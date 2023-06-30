@@ -27,7 +27,7 @@ export default function Home() {
       <h1 className="text-3xl text-rose-500 text-center m-4">Trending Now</h1>
       <div className="grid grid-cols-3 gap-2 md:grid-cols-5">
         {infinitetrending?.data?.pages.map((page: any) =>
-          page.results.map((e: any) => <Card {...e} />)
+          page.results.map((e: any) => <Card key={e?.id} {...e} />)
         )}
       </div>
     </div>
