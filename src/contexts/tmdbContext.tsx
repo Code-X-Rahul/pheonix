@@ -14,7 +14,7 @@ const options = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMDBlZjk5OWQyMDIwOWNlMWExMjBkM2Y0M2IxYjc3MyIsInN1YiI6IjY0OWU1MTM3NWFiYTMyMDBlMmZmNTFmMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.X2VyMF5E8AAqZPb1k1a3cUKkK6RnqCH8DrMbUpWF9mM",
+      `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
   },
 };
 
