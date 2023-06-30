@@ -11,7 +11,7 @@ const Header = () => {
           <FaStream />
         </div>
         <Link href="/" className="text-2xl font-bold">
-          Koala
+          Pheonix
         </Link>
       </div>
 

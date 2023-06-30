@@ -4,9 +4,9 @@ const Footer = () => {
     return (
         <footer className='flex flex-col justify-center items-center my-6 mt-auto'>
             <a className='text-2xl text-amber-600 animate-bounce mt-4' href="#header"> ^..^ BACK TO TOP ^..^</a>
-            <div className='w-[8rem]'>
+            <div className='w-[8rem] text-center'> 
                 {/* <Image className='w-full h-full' src={logo} alt="mangekyoreader.to" /> */}
-                Koala
+                Pheonix
             </div>
             <p className='text-md text-slate-300 m-1 text-center'>
                 Copyright © Koala.to. All Rights Reserved
