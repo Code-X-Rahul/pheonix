@@ -1,5 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Link from "next/link";
 
 export const EmblaCarousel = ({ results }: any) => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -21,9 +22,9 @@ export const EmblaCarousel = ({ results }: any) => {
                 {movie.overview}
               </p>
               <div className="flex space-x-4 mt-2">
-                <button className=" bg-rose-600 hover:bg-red-700 p-2 rounded-md transition-all">
+                <Link href={`/about/${movie.media_type}/${movie.id}`} className=" bg-rose-600 hover:bg-red-700 p-2 rounded-md transition-all">
                   Play Now
-                </button>
+                </Link>
                 <button className=" bg-red-600 hover:bg-rose-800 p-2 rounded-md transition-all">
                   Add to My List
                 </button>

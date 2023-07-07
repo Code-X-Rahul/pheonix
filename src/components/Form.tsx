@@ -9,7 +9,7 @@ const Form = () => {
     e.preventDefault();
     const query = inputRef.current?.value;
     console.log("inputHandler");
-    router.push(`search/${query}`);
+    router.push(`/search/${query}`);
   };
 
   return (

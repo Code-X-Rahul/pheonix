@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~fluid-player/src/css/fluidplayer.css";
+
 
 :root {
   --foreground-rgb: 0, 0, 0;

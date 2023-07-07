@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import QueryWrapper from "@/wrappers/queryProvider";
 import { TmdbProvider } from "@/contexts/tmdbContext";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
+import AuthProvider from "@/contexts/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,14 +21,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <QueryWrapper>
-          <TmdbProvider>
-            <Header />
-            {children}
-            <Footer />
-          </TmdbProvider>
-        </QueryWrapper>
+      <body className={`${inter.className}`}>
+        <AuthProvider>
+          <QueryWrapper>
+            <TmdbProvider>
+              <Header />
+              {children}
+              {/* <BackToTop /> */}
+              <Footer />
+            </TmdbProvider>
+          </QueryWrapper>
+        </AuthProvider>
       </body>
     </html>
   );

@@ -17,7 +17,10 @@ const Slider = ({ heading, results }: { heading: string; results: any }) => {
               height="100"
               className="aspect-video w-full rounded-md"
               src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
-              alt={movie?.title}
+              alt={movie?.name ||
+                movie.original_title ||
+                movie.title ||
+                movie.original_name}
             />
             <h1 className="text-center line-clamp-1 my-auto">
               {movie?.name ||

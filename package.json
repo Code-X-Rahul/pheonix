@@ -20,9 +20,11 @@
     "embla-carousel-autoplay": "^8.0.0-rc07",
     "embla-carousel-react": "^8.0.0-rc07",
     "eslint": "8.43.0",
-    "eslint-config-next": "13.4.7",
-    "firebase": "^9.23.0",
+    "eslint-config-next": "^13.4.7",
+    "fluid-player": "^3.18.0",
+    "hls.js": "^1.4.8",
     "next": "13.4.7",
+    "next-auth": "^4.22.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -30,5 +32,8 @@
     "react-query": "^3.39.3",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/hls.js": "^1.0.0"
   }
 }
