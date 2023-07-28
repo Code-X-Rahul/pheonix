@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <nav className="flex justify-between p-4 items-center bg-gradient-to-tr from-amber-700 to-amber-950">
+    <nav className="flex justify-between p-4 items-center bg-gradient-to-tr from-amber-700 to-amber-950 text-slate-50">
       <div className="flex justify-center items-center">
         <div className="mr-4 md:hidden">
           <FaStream />

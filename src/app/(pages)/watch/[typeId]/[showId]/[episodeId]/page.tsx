@@ -1,4 +1,4 @@
-import VIdeoJS from "@/components/VIdeoJS";
+import Player from "@/components/Player";
 import axios from "axios"
 
 const fetcheEpisodeLinks = async (id: Number | string, type: string, show: string) => {
@@ -27,7 +27,7 @@ const WatchPage = async ({ params }: {
             <h1>{typeId}</h1>
             <h1>{showId}</h1>
             <h1>{episodeId}</h1>
-            <VIdeoJS />
+            <Player {...data} />
         </div>
     )
 }

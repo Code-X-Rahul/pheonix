@@ -5,7 +5,7 @@ import Link from "next/link";
 export const EmblaCarousel = ({ results }: any) => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   return (
-    <div className="embla" ref={emblaRef}>
+    <div className="embla text-slate-50" ref={emblaRef}>
       <div className="embla__container h-[20rem] flex lg:h-[30rem]">
         {results?.map((movie: any) => (
           <div className="embla__slide relative" key={movie.id}>

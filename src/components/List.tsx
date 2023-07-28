@@ -4,7 +4,7 @@ import Pallet from "./Pallet"
 
 const List = ({ recommendations, similar }: any) => {
     return (
-        <div className="p-4 grid grid-cols-1 gap-4 xl:grid-cols-list">
+        <div className="p-4 grid grid-cols-1 gap-4 xl:grid-cols-[70%,_1fr] text-slate-50">
             <div className="">
                 <h2 className="text-2xl font-semibold mb-4">Recommended for you</h2>
                 <div className="grid grid-cols-3 gap-2 md:grid-cols-4 xl:grid-cols-5">

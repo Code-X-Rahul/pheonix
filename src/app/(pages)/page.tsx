@@ -20,7 +20,7 @@ export default function Home() {
   if (!trending?.data) return <div>No Data...</div>;
   return (
 
-    <div className="">
+    <div className="text-slate-50">
       <EmblaCarousel {...trending?.data} />
       <Slider heading="Popular Movies" {...popular?.data} />
       <Slider heading="Top Rating Movies" {...top_rated?.data} />

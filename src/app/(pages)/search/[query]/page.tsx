@@ -4,7 +4,7 @@ import Pallet from "@/components/Pallet";
 import axios from "axios";
 import { useInfiniteQuery } from "react-query";
 
-const page = ({
+const SearchPage = ({
   params,
 }: {
   params: {
@@ -43,7 +43,7 @@ const page = ({
   console.log(data);
 
   return (
-    <>
+    <main className="text-slate-50">
       <h1 className="m-4 text-2xl text-white">
         Search Result for {query.replaceAll("%20", " ")}:-
       </h1>
@@ -57,8 +57,8 @@ const page = ({
       <button className="disabled:text-zinc-600 flex justify-center items-center m-4 mx-auto" disabled={!hasNextPage} onClick={() => fetchNextPage()}>
         {isFetchingNextPage ? "Loading..." : "Load More..."}
       </button>
-    </>
+    </main>
   );
 };
 
-export default page;
+export default SearchPage;
